@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneChanger : MonoBehaviour
+public class patient_menu : MonoBehaviour
 {
+	public int numb;
 	public void ChangeScene(string sceneName)
 	{
-		SceneManager.LoadScene("SampleScene");
+		SceneManager.LoadScene(numb);
 	}
 	public void Exit()
 	{
